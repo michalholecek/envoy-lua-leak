@@ -31,7 +31,7 @@ static_resources:
                         cluster: web
             http_filters:
               - name: envoy.lua
-                config: { inline_code: dofile("./lua/script_respond_leak.lua") }
+                config: { inline_code: dofile("script_respond_leak.lua") }
               - name: envoy.router
                 config: {}
   clusters:
