@@ -11,5 +11,5 @@ sudo ./run_error_leak.sh
 
 Both of these leaks cause envoy to crash after around 900K - 1.3M request. For generatin traffic run:
 ```
-./start_traffic.sh
+wrk -t1 -c100 -d5m http://0.0.0.0:666
 ```
