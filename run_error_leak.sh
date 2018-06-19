@@ -1,5 +1,5 @@
 #!/bin/bash
 
 #Start envoy
-sudo ./binary/envoy_latest --v2-config-only -c ./configs/envoy_lua_error_leak.yaml
+sudo ./envoy_latest --v2-config-only -c envoy_lua_error_leak.yaml
 
