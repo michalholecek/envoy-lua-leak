@@ -6,10 +6,10 @@ sudo ./envoy_latest --v2-config-only -c envoy_lua_respond_leak.yaml
 ```
 ##### For lua error leak run:
 ```
-sudo ./run_error_leak.sh
+sudo ./envoy_latest --v2-config-only -c envoy_lua_error_leak.yaml
 ```
 
-Both of these leaks cause envoy to crash after around 900K - 1.3M request. For generatin traffic run:
+Both of these leaks cause envoy to crash after around 900K - 1.5M request. To generate traffic run:
 ```
 wrk -t1 -c100 -d5m http://0.0.0.0:666
 ```
