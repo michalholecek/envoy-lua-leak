@@ -1,4 +1,4 @@
-# envoy-lua-leak
+## Envoy lua leak
 This repository shows memory leaks in envoy lua scripts based on this envoy issue: https://github.com/envoyproxy/envoy/issues/3570
 ##### First, you need to change permissions of the binary:
 ```
